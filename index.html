@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oleg Mazur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --color-background-light: #ffffff;
+      --color-background-subdued: #dfe5e639;
+      --color-text-dark: #171c1c;
+      --color-text-subdued: #4a5a5c;
+    }
+    .inter-font {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    .roboto-font {
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      background: var(--color-background-subdued);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    img {
+      width: 70%;
+      margin: 0 auto;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  </style>
+  <body>
+    <main>
+      <h1 class="roboto-font">My Main Title</h1>
+      <section>
+        <h2 class="roboto-font">My Section Title</h2>
+        <p class="inter-font">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img src="./images/img-placeholder.png" />
+      </section>
+      <section>
+        <h2 class="roboto-font">My Section Title</h2>
+        <p class="inter-font">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img src="./images/img-placeholder.png" />
+      </section>
+    </main>
+  </body>
+</html>
