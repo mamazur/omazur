@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      A Next-Generation Adjustable Sling System for Stress Urinary Incontinence
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      #navbar {
+        transition: top 0.3s;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-white shadow-md z-50 hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold">
+          <a href="#" class="hover:text-cyan-600">OPUS</a>
+        </div>
+        <div class="space-x-6">
+          <a href="#for-surgeons" class="hover:text-cyan-600">For Surgeons</a>
+          <a href="#patient-overview" class="hover:text-cyan-600"
+            >For Patients</a
+          >
+          <a href="#clinical-benefits" class="hover:text-cyan-600"
+            >Clinical Evidence</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-cyan-100 to-white text-center px-6"
+    >
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">
+        A Next-Generation Adjustable Sling System for Stress Urinary
+        Incontinence
+      </h1>
+      <p class="text-lg md:text-2xl mb-8 fade-in">
+        Precise, reproducible postoperative tension control designed to restore
+        continence in women and men.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 fade-in">
+        <a
+          href="#for-surgeons"
+          class="bg-cyan-600 text-white px-6 py-3 rounded-lg hover:bg-cyan-700 transition"
+          >For Surgeons</a
+        >
+        <a
+          href="#patient-overview"
+          class="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition"
+          >For Patients</a
+        >
+        <a
+          href="#clinical-benefits"
+          class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition"
+          >Clinical Evidence</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 max-w-7xl mx-auto px-6 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Key Features
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Feature 1: Wrench -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:bg-cyan-50 hover:shadow-2xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-12 w-12 text-cyan-600 mb-4 transition-colors duration-300 group-hover:text-cyan-800"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.867 19.125h.008v.008h-.008v-.008Z"
+            />
+          </svg>
+
+          <h3 class="text-xl font-semibold mb-2">High Precision</h3>
+          <p>
+            Reliable performance and easy maintenance for better patient
+            outcomes.
+          </p>
+        </div>
+
+        <!-- Feature 2: Pencil/Edit -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:bg-teal-50 hover:shadow-2xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-12 w-12 text-teal-600 mb-4 transition-colors duration-300 group-hover:text-teal-800"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+            />
+          </svg>
+
+          <h3 class="text-xl font-semibold mb-2">Customizable</h3>
+          <p>
+            Easily adaptable for different clinical workflows and user
+            preferences.
+          </p>
+        </div>
+
+        <!-- Feature 3: User (Man/Woman) -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:bg-lime-50 hover:shadow-2xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-12 w-12 text-lime-600 mb-4 transition-colors duration-300 group-hover:text-lime-800"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+            />
+          </svg>
+
+          <h3 class="text-xl font-semibold mb-2">Patient Focused</h3>
+          <p>Designed with patient comfort, safety, and usability in mind.</p>
+        </div>
+
+        <!-- Feature 4: Reload -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:bg-indigo-50 hover:shadow-2xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-12 w-12 text-indigo-600 mb-4 transition-colors duration-300 group-hover:text-indigo-800"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+            />
+          </svg>
+
+          <h3 class="text-xl font-semibold mb-2">Reliable Operation</h3>
+          <p>
+            Continuous, robust performance ensures consistent results in every
+            use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-cyan-50 fade-in">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <!-- Heading & Subtitle -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">How It Works</h2>
+        <p class="text-cyan-700 text-lg md:text-xl mb-6">
+          What Is the Adjustable Sling System?
+        </p>
+        <p class="text-md md:text-lg mb-12">
+          This system is a readjustable mid-urethral sling developed to treat
+          stress urinary incontinence (SUI).Unlike fixed-tension slings, the
+          system allows controlled, postoperative tension adjustments, improving
+          the ability to achieve consistent continence outcomes.
+        </p>
+
+        <!-- How the System Works -->
+        <div class="grid md:grid-cols-2 gap-12 text-left">
+          <!-- Point 1 -->
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="h-10 w-10 flex items-center justify-center rounded-full bg-cyan-600 text-white font-bold"
+              >
+                1
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Implantation</h3>
+              <p>
+                A supportive sling is implanted beneath the mid-urethra or
+                bladder neck.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 2 -->
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-600 text-white font-bold"
+              >
+                2
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Connencting</h3>
+              <p>
+                A precision tensioning mechanism is connected externally during
+                the early postoperative phase.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 3 -->
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="h-10 w-10 flex items-center justify-center rounded-full bg-lime-600 text-white font-bold"
+              >
+                3
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Adjustment</h3>
+              <p>
+                The surgeon adjusts sling tension as needed to achieve the
+                desired level of continence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 4 -->
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+              <div
+                class="h-10 w-10 flex items-center justify-center rounded-full bg-indigo-600 text-white font-bold"
+              >
+                4
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Finalization</h3>
+              <p>
+                Once optimal support is reached, the external component is
+                removed, leaving the implanted sling and tensioning device in
+                place.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinical Benefits Section -->
+    <section id="clinical-benefits" class="py-20 bg-white fade-in">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">Clinical Benefits</h2>
+
+        <div class="grid md:grid-cols-2 gap-12 text-left">
+          <!-- Benefit 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:bg-cyan-50 hover:shadow-2xl cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              Personalized Tension Control
+            </h3>
+            <p>
+              Postoperative adjustments allow surgeons to customize support
+              based on individual patient response—something not possible with
+              standard fixed, non-adjustable slings slings.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:bg-cyan-50 hover:shadow-2xl cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              Reduced Need for Revision Surgery
+            </h3>
+            <p>
+              Many patients achieve continence without undergoing a second sling
+              implantation.
+            </p>
+          </div>
+
+          <!-- Benefit 3 (with bullet points) -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:bg-cyan-50 hover:shadow-2xl cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              Improved Outcomes for Complex SUI
+            </h3>
+            <p>Especially helpful for:</p>
+            <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+              <li>Intrinsic sphincter deficiency (ISD)</li>
+              <li>Recurrent SUI after prior sling surgery</li>
+              <li>
+                Re-operations after complications of prior sling surgery (mesh
+                erosion, obstructions, etc.)
+              </li>
+              <li>Male SUI after prostate surgery</li>
+            </ul>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:bg-cyan-50 hover:shadow-2xl cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              Clinically Proven Concept
+            </h3>
+            <p>
+              Supported by long-term data demonstrating safety, effectiveness,
+              and durability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center pt-12">
+        <img
+          src="./images/Size_coin.png"
+          alt="About image"
+          class="rounded-lg shadow-lg w-full max-w-md object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Patient-Friendly Overview Section -->
+    <section id="patient-overview" class="py-20 bg-cyan-50 fade-in">
+      <div class="max-w-6xl mx-auto px-6 pb-12">
+        <!-- Main Header -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center pb-12">
+          Patient-Friendly Overview
+        </h2>
+
+        <!-- Info Cards -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- What Is Stress Urinary Incontinence? -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              What Is Stress Urinary Incontinence?
+            </h3>
+            <p class="text-gray-700">
+              Stress urinary incontinence occurs when physical movements—such as
+              coughing, laughing, lifting, or exercising—cause involuntary urine
+              leakage due to weakening of the urethral support or sphincter
+              muscles.
+            </p>
+          </div>
+
+          <!-- How the Adjustable Sling Helps -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              How the Adjustable Sling Helps
+            </h3>
+            <p class="text-gray-700">
+              The sling gently supports the urethra, restoring normal closure
+              during activity.The ability to adjust tension after surgery means
+              results can be tailored to your unique needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Key Benefits for Patients -->
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer max-w-xl mx-auto"
+        >
+          <h3 class="text-2xl font-semibold mb-4">What to Expect</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Short outpatient/same-day procedure</li>
+            <li>Light recovery period</li>
+            <li>Next day postoperative adjustment visit</li>
+            <li>Long-lasting continence improvement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mx-auto w-full max-w-3xl">
+        <video class="w-full h-auto rounded-lg shadow-lg" controls>
+          <source src="./videos/0001-0250.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- For Surgeons Section -->
+    <section id="for-surgeons" class="py-20 bg-white fade-in">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">For Surgeons</h2>
+
+        <div class="grid md:grid-cols-2 gap-12 text-left">
+          <!-- Header 1 + Bullet Points -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Surgical Workflow</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Familiar retropubic approach</li>
+              <li>Controlled tensioning during surgery</li>
+              <li>Simplified postoperative adjustments</li>
+              <li>
+                Designed to minimize complications and optimize continence rates
+              </li>
+            </ul>
+          </div>
+
+          <!-- Header 2 + Bullet Points -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">
+              Why Surgeons Choose This System
+            </h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Reliable placement</li>
+              <li>Predictable tension management</li>
+              <li>Proven in both male and female patient populations</li>
+              <li>
+                Reduction in revision procedures compared to non-adjustable
+                slings
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-20 bg-cyan-600 text-white text-center fade-in">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Discover how the adjustable sling system can improve continence
+          outcomes.
+        </h2>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+          <a
+            href="#"
+            class="bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+            >Learn More</a
+          >
+          <a
+            href="#"
+            class="bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition"
+            >Request Clinical Information</a
+          >
+          <a
+            href="#"
+            class="bg-gray-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
+            >Find a Trained Surgeon</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety & Indications Preview Section -->
+    <section id="safety" class="py-20 bg-gray-100 fade-in">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Safety & Indications
+        </h2>
+
+        <ul
+          class="text-left list-disc list-inside space-y-3 text-gray-700 max-w-2xl mx-auto"
+        >
+          <li>
+            Intended for the treatment of stress urinary incontinence in women
+            and men.
+          </li>
+          <li>
+            Contraindications may include active infection, pregnancy, or
+            conditions preventing safe anesthesia.
+          </li>
+          <li>
+            Possible risks include pain, urinary retention, infection, mesh
+            exposure, or the need for adjustment or revision procedures.
+          </li>
+          <li>Always consult the full Instructions for Use.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="py-6 text-center text-gray-600">
+      &copy; 2025 OPUS. All rights reserved.
+    </footer>
+
+    <script>
+      const faders = document.querySelectorAll(".fade-in");
+
+      const appearOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          navbar.classList.remove("hidden");
+        } else {
+          navbar.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

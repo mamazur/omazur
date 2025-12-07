@@ -1,92 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oleg Mazur</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: inherit;
-      margin: 0;
-      padding: 0;
-    }
-    :root {
-      --color-background-light: #ffffff;
-      --color-background-subdued: #dfe5e639;
-      --color-text-dark: #171c1c;
-      --color-text-subdued: #4a5a5c;
-    }
-    .inter-font {
-      font-family: "Inter", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Next-Generation Adjustable Sling System for Stress Urinary Incontinence</title>
 
-    .roboto-font {
-      font-family: "Roboto", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind Config for Medical Green Palette -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            medical: {
+              light: '#E8F5E9', // very soft green
+              DEFAULT: '#43A047', // standard green
+              dark: '#2E7D32', // darker medical green
+            }
+          }
+        }
+      }
     }
-    main {
-      max-width: 800px;
-      margin: auto;
-      background: var(--color-background-subdued);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+  </script>
+</head>
+<body class="bg-medical-light text-medical-dark">
+
+  <header class="relative bg-medical-light text-medical-dark py-24 px-6 overflow-hidden">
+
+    <div class="relative max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight drop-shadow-sm">
+        A Next-Generation Adjustable Sling System for Stress Urinary Incontinence
+      </h1>
+
+      <p class="text-lg md:text-2xl max-w-3xl mx-auto text-medical-dark/80">
+    Precise, reproducible postoperative tension control designed to restore continence in women and men.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 pt-6">
+        <a href="#" class="bg-medical hover:bg-medical-dark text-white px-6 py-3 rounded-xl font-semibold shadow transition-transform hover:scale-105">
+          For Patients
+        </a>
+        <a href="#" class="bg-white hover:bg-medical-light text-medical-dark border border-medical px-6 py-3 rounded-xl font-semibold shadow transition-transform hover:scale-105">
+          For Surgeons
+        </a>
+        <a href="#" class="bg-white hover:bg-medical-light text-medical-dark border border-medical px-6 py-3 rounded-xl font-semibold shadow transition-transform hover:scale-105">
+         Clinical Evidence
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Feature Bullet Points Section -->
+  <section class="bg-white text-medical-dark py-20 px-6 animate-fade-in">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">Key Advantages</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      <!-- Bullet 1 -->
+      <div class="flex flex-col items-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-medical-light flex items-center justify-center text-medical-dark text-3xl">🔧</div>
+        <h3 class="text-xl font-semibold">Adjustable Postoperative Tension</h3>
+        <p class="text-medical-dark/70">Fine-tune sling support after implantation to optimize continence without full revision surgery.</p>
+      </div>
+
+      <!-- Bullet 2 -->
+      <div class="flex flex-col items-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-medical-light flex items-center justify-center text-medical-dark text-3xl shadow">✏️</div>
+        <h3 class="text-xl font-semibold">Minimally Invasive Surgical Technique</h3>
+        <p class="text-medical-dark/70">Retropubic mini-invasive approach with small incisions and reduced recovery time.</p>
+      </div>
+
+      <!-- Bullet 3 -->
+      <div class="flex flex-col items-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-medical-light flex items-center justify-center text-medical-dark text-3xl shadow">👥</div>
+        <h3 class="text-xl font-semibold">Designed for Women and Men</h3>
+        <p class="text-medical-dark/70">Adaptable configurations for female SUI and male post-prostatectomy incontinence.</p>
+      </div>
+
+      <!-- Bullet 4 -->
+      <div class="flex flex-col items-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-medical-light flex items-center justify-center text-medical-dark text-3xl shadow">🔄</div>
+        <h3 class="text-xl font-semibold">Re-adjustable without</h3>
+        <p class="text-medical-dark/70">full revision surgery</p>
+      </div>
+    </div>
+  </section>
+<!-- How It Works Section -->
+  <section class="bg-gray-50 text-gray-800 py-20 px-6 animate-fade-in">
+ 
+    <div class="max-w-5xl mx-auto text-center space-y-6 mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">How It Works</h2>
+      <h3 class="text-xl md:text-2xl text-medical-dark/80 font-medium">What Is the Adjustable Sling System?</h3>
+      <p class="max-w-3xl mx-auto text-medical-dark/70">
+        This system is a readjustable mid-urethral sling developed to treat stress urinary incontinence (SUI).Unlike fixed-tension slings, the system allows controlled, postoperative tension adjustments, improving the ability to achieve consistent continence outcomes.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <!-- Step 1 -->
+      <div class="space-y-2">
+        <h4 class="text-xl font-semibold">1. A supportive sling is implanted beneath the mid-urethra or bladder neck.</h4>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="space-y-2">
+        <h4 class="text-xl font-semibold">2. A precision tensioning mechanism is connected externally during the early postoperative phase.</h4>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="space-y-2">
+        <h4 class="text-xl font-semibold">3. The surgeon adjusts sling tension as needed to achieve the desired level of continence.</h4>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="space-y-2">
+        <h4 class="text-xl font-semibold">4. Once optimal support is reached, the external component is removed, leaving the implanted sling  and tensioning device in place.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade-in bg-green-50 text-green-900 py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Section Title</h2>
+    <p class="text-lg mb-6">Supporting subheader text goes here.</p>
+
+    <p class="text-base max-w-2xl mx-auto">
+      A paragraph explaining the content of the section.
+    </p>
+  </div>
+</section>
+
+<section class="fade-in bg-gray-100 text-gray-800 py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Section Title</h2>
+    <p class="text-lg mb-6">Supporting subheader text goes here.</p>
+
+    <p class="text-base max-w-2xl mx-auto">
+      Another style variant with neutral background.
+    </p>
+  </div>
+</section>
+
+  <!-- Tailwind Animation Utilities -->
+  <style>
+    .animate-fade-in {
+      animation: fadeIn 1.2s ease-out forwards;
     }
-    img {
-      width: 70%;
-      margin: 0 auto;
-    }
-    section {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
-  <body>
-    <main>
-      <h1 class="roboto-font">My Main Title</h1>
-      <section>
-        <h2 class="roboto-font">My Section Title</h2>
-        <p class="inter-font">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="./images/img-placeholder.png" />
-      </section>
-      <section>
-        <h2 class="roboto-font">My Section Title</h2>
-        <p class="inter-font">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="./images/img-placeholder.png" />
-      </section>
-    </main>
-  </body>
+
+</body>
 </html>
